@@ -1,0 +1,10 @@
+Download the current FAA database from here: https://www.faa.gov/licenses_certificates/aircraft_certification/aircraft_registry/releasable_aircraft_download/
+
+Unzip into data/
+
+Run: rake import
+
+The positions and offsets for the data in the FAA files are configured in config/data_format.yaml
+
+YMMV.  TGIF.
+

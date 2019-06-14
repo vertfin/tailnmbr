@@ -1,0 +1,203 @@
+Aircraft:
+  filename: MASTER.txt
+  columns:
+    n:
+      at: 1
+      limit: 5
+
+    serial:
+      at: 7
+      limit: 30
+
+    ac_model_code:
+      at: 38
+      limit: 7
+
+    eng_model_code:
+      at: 46
+      limit: 5
+
+    year:
+      limit: 2
+      at: 52
+
+    reg_type:
+      limit: 2
+      at: 57
+
+    reg_name:
+      at: 59
+      limit: 50
+
+    street1:
+      at: 110
+      limit: 33
+
+    street2:
+      at: 144
+      limit: 33
+
+    city:
+      at: 178
+      limit: 18
+
+    state:
+      at: 197
+      limit: 2
+
+    zip:
+      at: 200
+      limit: 10
+
+    region:
+      at: 211
+      limit: 1
+
+    county_mail:
+      at: 213
+      limit: 3
+
+    country_mail:
+      at: 217
+      limit: 2
+
+    last_activity_on:
+      at: 220
+
+    cert_issued_on:
+      at: 229
+
+    aw_class:
+      at: 238
+      limit: 1
+
+    op_codes:
+      at: 239
+      limit: 9 # what?
+
+    ac_type:
+      at: 249
+      limit: 2
+
+    eng_type:
+      at: 251
+      limit: 2
+
+    status_code:
+      at: 254
+      limit: 2
+
+    mode_s:
+      at: 257
+      limit: 8
+
+    fractional:
+      at: 266
+      type: :yboolean
+
+    aw_date:
+      at: 268
+
+    other_name_1:
+      at: 277
+      limit: 50
+
+    other_name_2:
+      at: 328
+      limit: 50
+
+    other_name_3:
+      at: 379
+      limit: 50
+
+    other_name_4:
+      at: 430
+      limit: 50
+
+    other_name_5:
+      at: 481
+      limit: 50
+
+    expires_on:
+      at: 532
+
+    uid:
+      at: 541
+      limit: 8
+
+    kit_mfr_name:
+      at: 550
+      limit: 30
+
+    kit_model:
+      at: 581
+      limit: 20
+
+    mode_s_hex:
+      at: 602
+      limit: 10
+
+AircraftModel:
+  filename: ACFTREF.txt
+  columns:
+    code:
+      at: 1
+      limit: 7
+
+    mfr_name:
+      at: 9
+      limit: 30
+
+    model_name:
+      at: 40
+      limit: 20
+
+    ac_type:
+      at: 61
+      limit: 1
+
+    eng_type:
+      at: 63
+
+    ac_cat_code:
+      at: 66
+
+    builder_cert_code:
+      at: 68
+
+    num_engines:
+      at: 70
+
+    num_seats:
+      at: 73
+
+    weight:
+      at: 77
+      type: :weight_string
+
+    cruise_speed:
+      at: 85
+
+EngineModel:
+  filename: 'ENGINE.txt'
+  columns:
+    code:
+      at: 1
+      limit: 5
+
+    mfr_name:
+      at: 7
+      limit: 10
+
+    model_name:
+      at: 18
+      limit: 13
+
+    eng_type:
+      at: 32
+
+    hp:
+      at: 35
+
+    lbs_thrust:
+      at: 41
